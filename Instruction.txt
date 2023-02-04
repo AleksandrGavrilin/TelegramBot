@@ -1,0 +1,27 @@
+Инструкция к боту "Игра погружение танец я все могу (21 день)".
+1. Назначение или смена администратора определяется с помощью введения и отправки сообщения в чат бота пользователем, а именно: "admin1234",
+информация об админитсраторе сохраняется в базе данных (администратор может быть только один);
+2. Предоставление доступа к "игре" реализована с помощью алгоритма, в котором пользователь отправляет фото или файл подтверждения оплаты в чат бота,
+и данный документ отправляется непосредственно администратору, у адм. в этот момент появляется данный документ, id пользователя и кнопка "РАЗРЕШИТЬ",
+при ее нажатии пользователю предоставляется доступ к игре, а также сам пользователь сохраняется в базе данных (требуется для алгоритма бота);
+3. Для возможности отправки контента в определенное время, реализиван алгоритм по синхронизации часового пояса с помощью названия города,
+соответственно пользователю в определенный момент приходит запрос с просьбой ввести город, после получения данной информации, час.пояс сохраняется
+в базе данных, если вдруг потребуется, в любой момент можно сменить город - локацию написав его в чате (об этом пользователя оповещают);
+4. При желании не "зализая" в код бота, можно изменить основые сообщения - текстовки дней, видео, аудио и фото контент,
+для этого требуется зайти в папку TelegramBot - папку days - далее выбераем определенный день и меняем/корректируем файл (важно чтобы название файла
+(при его замене) было таким же), название кнопок папка TelegramBot - файл buttons.
+
+
+
+Instructions for the bot "Game immersion dance I can do everything (21 days)".
+1. The appointment or change of the administrator is determined by entering and sending a message to the bot chat by the user, namely: "admin1234",
+information about the administrator is stored in the database (there can be only one administrator);
+2. Granting access to the "game" is implemented using an algorithm in which the user sends a photo or payment confirmation file to the chat bot,
+and this document is sent directly to the administrator, at the admin. at this moment the given document appears, the user id and the "ALLOW" button,
+when it is pressed, the user is granted access to the game, and the user himself is saved in the database (required for the bot algorithm);
+3. To be able to send content at a certain time, an algorithm has been implemented to synchronize the time zone using the name of the city,
+Accordingly, the user at a certain moment receives a request asking him to enter the city, after receiving this information, the time zone is saved
+in the database, if you suddenly need it, at any time you can change the city - location by writing it in the chat (the user is notified about this);
+*4. If desired, without "licking" into the bot code, you can change the basic messages - day texts, video, audio and photo content,
+to do this, you need to go to the TelegramBot folder - the days folder - then select a specific day and change / correct the file (it is important that the file name
+(when it was replaced) was the same), the name of the buttons in the TelegramBot folder is the file buttons.
