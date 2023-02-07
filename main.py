@@ -123,8 +123,7 @@ def introduction(call):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         # Кнопка "button5"-"НАПОМИНАНИЯ" появляется рядом с чатом пользователя (правила игры).
         keyboard5 = types.KeyboardButton(buttons['button5'])
-        keyboard6 = types.KeyboardButton(buttons['button7'])
-        markup.add(keyboard5, keyboard6)
+        markup.add(keyboard5)
         bot.send_message(call.message.chat.id, message_last_introduction, reply_markup=markup)
     # Кнопка "button3"-"РАЗРЕШИТЬ" появляется в чате у адм., после отправки пользователем подтверждения об оплате.
     elif call.data.startswith(buttons['button3']):
