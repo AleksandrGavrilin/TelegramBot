@@ -1,4 +1,4 @@
-![](img_for_readme/Black Sky.png)
+![](img_for_readme/blacksky.jpg)
 ____
 This **bot** is designed to send various notifications, content to the user, 
 taking into account the specified time intervals, which allows you to **automate the interaction**
